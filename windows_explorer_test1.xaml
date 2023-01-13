@@ -1,0 +1,8 @@
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <TreeView x:Name="FolderTree" Grid.Column="0" />
+    <ListView x:Name="FileList" Grid.Column="1" />
+</Grid>
