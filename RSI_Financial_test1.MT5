@@ -1,0 +1,23 @@
+// RSI based buy and sell strategy
+// RSI < 20 = sell, RSI > 80 = buy
+
+// Parameters
+input int RSI_Period = 14;
+input int RSI_Threshold_Low = 20;
+input int RSI_Threshold_High = 80;
+
+// Variables
+double RSI;
+
+// Indicator calculations
+RSI = iRSI(NULL, 0, RSI_Period, PRICE_CLOSE, 0);
+
+// Trading logic
+if (RSI < RSI_Threshold_Low)
+{
+    // Sell logic here
+}
+else if (RSI > RSI_Threshold_High)
+{
+    // Buy logic here
+}
